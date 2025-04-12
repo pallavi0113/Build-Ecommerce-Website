@@ -124,7 +124,10 @@ body{
     position: absolute;
     bottom: -4px;
     left: 20px;
-
+}
+#mobile{
+    display: none;
+    align-items: center;
 }
 
  /***** End header Section *****/
@@ -512,5 +515,36 @@ footer .copyright{
 }
   /***** End Home Section *****/
 
+/***** Section media query *****/
+@media(max-width:799px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+}
+/***** End Section media query *****/
 
  
